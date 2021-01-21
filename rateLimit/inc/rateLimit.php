@@ -28,7 +28,6 @@ class rateLimit
         $this->time = microtime(true);
         $this->date = date('H:i:s');
         $this->utm = new DataBase(DBTYPE, DBUTM_HOST_SLAVE, DBUTM_USER, DBUTM_PASS, DBUTM_NAME);
-        //$this->temp = new DataBase(DBTYPE, DBTEMP_HOST, DBTEMP_USER, DBTEMP_PASS, DBTEMP_NAME);
     }
 
     /**
