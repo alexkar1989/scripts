@@ -23,11 +23,8 @@ function dump(...$errs)
         }
         return true;
     } else {
-        if ((new Network(ADMIN_IPS))->checkIp($_SERVER['REMOTE_ADDR'])) {
-            foreach ($errs as $err) {
+        foreach ($errs as $err) {
                 echo '<pre>' . print_r($err, true) . '</pre>';
-            }
-            return true;
         }
     }
     return false;
