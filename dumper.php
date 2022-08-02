@@ -1,3 +1,4 @@
+<?php
 /**
  * @param mixed ...$errs
  */
